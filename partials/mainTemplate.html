@@ -1,0 +1,42 @@
+<!--TOP LEVEL CONTAINER -->
+<div class="container">
+	<div class="col-md-4" ng-repeat="character in vm.characters.name_url">
+		<div >
+			<ul class="nameList"> 
+				<li  
+					ng-click="vm.getMovies(vm.characters.movieTitles,character.url, vm.characters.releaseDate)"
+					ng-mouseleave="mv.hover=false"
+					ng-mouseenter="mv.hover=trure">
+					<a href="#/{{character.name}}">{{character.name}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!--MODAL STARTS HERE-->
+<button type="button" class="btn btn-primary btn-lg btn-hide" data-toggle="modal" data-target="#myModal">
+</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Filmography</h4>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li ng-repeat="title in vm.characters.movieTitles">{{title}},
+						<span> Released : {{vm.characters.releaseDate[$index] | date: medium}}</span>
+					</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

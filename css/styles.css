@@ -1,0 +1,36 @@
+body {
+    padding-top: 70px; 
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.nameList > li{
+	width: 50% !important;
+	list-style: none;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.nameList > li:hover{
+	background-color: rgba(100, 159, 210, .5);
+	border-radius: 10%;
+}
+
+.movieList{
+	width: 60% !important;
+	margin: -10px !important;
+}
+
+.btn-hide{
+	visibility: hidden;
+}
+img{
+	height: 400px;
+	width: 400px;
+}

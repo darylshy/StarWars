@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+</head>
+		<img src="images/background.png" class="img-circle img-responsive pull-xs-right"  />
+
+<body ng-app="starwars">
+	<div class="jumbotron">
+		<h1 class="display-3">Star Wars</h1>
+		<p class="lead">Get Filmography by selecting a character below.</p>
+		<hr class="m-y-2">
+		<p class="lead">
+			<starwars-movie></starwars-movie>
+			<span us-spinner spinner-key="spinner-1"></span>
+		</p>
+	</div>
+	
+
+	
+	<script type="text/javascript" src="js/scripts/lib/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/tether/tether.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" 
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/scripts/app/app.js"></script>
+	<script type="text/javascript" src="js/scripts/components/mainComponent.js"></script>
+	<script type="text/javascript" src="js/scripts/services/movieServices.js"></script>
+	<script type="text/javascript" src="node_modules/angular-spinner/node_modules/spin.js/spin.js"></script>
+	<script type="text/javascript" src="node_modules/angular-spinner/angular-spinner.js"></script>
+
+</body>
+</html>
